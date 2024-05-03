@@ -1,0 +1,22 @@
+An integer is a palindrome when it reads the same forward and backward.
+For example, 121 is a palindrome while 123 is not
+
+class Solution {
+public:
+    bool isPalindrome(int x) {
+         if (x < 0) {
+            return false;
+        }
+
+        long long reversed = 0;
+        long long temp = x;
+
+        while (temp != 0) {
+            int digit = temp % 10;
+            reversed = reversed * 10 + digit;
+            temp /= 10;
+        }
+
+        return (reversed == x);
+    }
+};
