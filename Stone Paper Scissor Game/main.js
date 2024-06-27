@@ -1,0 +1,1 @@
+console.log( "BIDUUU JS ho rela hai");
